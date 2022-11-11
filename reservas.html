@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="icons/fav.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <title>Reservas</title>
 </head>
 
@@ -15,106 +15,74 @@
 
     <!-- __Header__ -->
     <header class="header">
-        <div class="logo">
-            <a href="/index.html"><img src="img/yugen_logo.png" alt="Logo de la marca"></a>   
-        </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="paraleer.html">Para leer</a></li>
-                <li><a href="yugencafe.html">Yugen Café</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="index.html">Volver al inicio</a></li>
             </ul>
         </nav>
 
-        <button class="bars">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        
-        <div class="usershop">
-            <div class="userheader">
-                <a href="#"><img src="icons/user.svg" alt="login"></a>
-            </div>
-            <div class="shopheader">
-               <a href="#"><img src="icons/bag.svg" alt="carrito"></a>
-            </div>
-        </div>
-    </header>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br>
 
-    <h2>Estamos trabajando para usted</h2>
-    <img src="img/estamos trabajando.gif" alt="">
+    <!-- Formulario en bootstrap -->
 
-    <br><br><br><br>
-
-</body>
-
-
-<!-- ____Footer____ -->
-
-<footer>
     <div class="container">
-        <div class="wraper">
-            <div class="footer-widget">
-                <a href="#">
-                    <img src="img/yugenlogo-black.png" alt="Logo de la marca" class="logo">
-                </a>
-                <p><b>Un té, un libro y a disfutar …</b> 
-                    <br>
-                    De martes a domingo de 7 a 21 hrs 
-                </p>
-                <ul class="socials">
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>     
-                </ul>
-        </div>
-        <div class="footer-widget">
-            <h4>Sitio</h4>
-            <ul class="link">
-                <li><a href="index.html">Incio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="paraleer.html">Para leer</a></li>
-                <li><a href="yugencafe.html">Yugen Café</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-            </ul>
-        </div>
+        <form class="row g-5 mt-5">
 
-        <div class="footer-widget">
-            <div class="info">
-                <h4>Ven a visitarnos</h4>
-            <ul class="link">
-                <li>Malabia 1720 | (1704) Palermo</li>
-                <li>Buenos Aires | Argentina</li>
-                <li>+54 9 11 39838887</li>
-                <li><a href="https://goo.gl/maps/hNaJNJ2vdKoAG8oK6">Ver mapa</a></li>
-            </ul>
+            <div class="col-6">
+                <label for="nombrelInput" class="form-label">Nombre</label>
+                <input type="nombre" class="form-control" id="nombrelInput" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="col-6">
+                <label for="inputApellido" class="form-label">Apellido</label>
+                <input type="apellido" class="form-control" id="inputApellido" placeholder="Ingresa tu apellido">
+            </div>
+
+
+            <div class="col-6">
+                <label for="inputDni" class="form-label">Documento de identidad</label>
+                <input type="dni" class="form-control" id="inputDni" placeholder="Ingresa tu documento de identidad">
+            </div>
+
+            <div class="col-6">
+                <label for="imputTel" class="form-label">Número de teléfono</label>
+                <input type="telefono" class="form-control" id="imputTel" placeholder="Ingresa tu número de teléfono">
+            </div>
+
+            <div class="col-6">
+                <label for="imputMot" class="form-label">Motivo de la reserva</label>
+                <input type="mot" class="form-control" id="imputMot" placeholder="Ingresa el motivo de reserva. Ej: Estudio"> 
+            </div>
+
+            <div class="col-3">
+                <label for="imputDia" class="form-label">dd/mm/aa</label>
+                <input type="dia" class="form-control" id="imputDia" placeholder="Ingresa la fecha de reserva"> 
+            </div>
+
+            <div class="col-3">
+                <label for="imputHora" class="form-label">Hora</label>
+                <input type="dia" class="form-control" id="imputDia" placeholder="Ingresa la Hora de reserva"> 
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
 
             </div>
-            
-        </div>
 
-        <div class="footer-widget">
-            <div class="pay">
-                <h4>Medios de pago</h4>
-                <ul class="link">
-                    <li>Efectivo</li>
-                    <li>Débito</li>
-                    <li>Crédito</li>
-                    <li><a href="#">Ver otros</a></li>
-                </ul>
-            </div>
-        </div>
 
-        </div>
 
+
+
+
+
+
+        </form>
     </div>
 
-    <div class="copyright-wrapper">
-        <p>Yugen Café. Todos los derechos reservados 2022</p>
-    </div>
 
-</footer>
+
+
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>        
+</body>
 
 </html>
